@@ -9,7 +9,6 @@ var app = express();
 app.use(logger('dev'));
 app.use(bodyParser.json());
 
-//mongoose.connect('mongodb://admin:password@127.0.0.1:27017/doarstep');
 // Mongoose connection to MongoDB (ted/ted is readonly)
 mongoose.connect('mongodb://admin:password@localhost:27017/admin/testnode', function (error) {
     if (error) {
